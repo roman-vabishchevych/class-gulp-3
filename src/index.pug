@@ -1,0 +1,17 @@
+extends layouts/main
+
+append params
+	- pageTitle = "Сторінка 1"
+
+block content
+	h1 Hello, World!
+
+	+b('ul').list
+		+e.item._active Item 1
+		+e.item Item 2
+		+e.item Item 3
+		+e.item Item 4
+			+e.link(href="//google.com")
+				+e.link-text Link
+	+b.logo
+		+e.img(src="")
